@@ -55,13 +55,15 @@ def write_asc(coordinates, filename, cell_size, flip_y):
             else:
                 file.write(" ")
 
-# Args.
+# Main.
+# Find file.
 xyz_files = list(filter(lambda f : f.endswith(".xyz"), os.listdir("./")))
 
 if len(xyz_files) != 1:
     print("No .xyz or more than one .xyz in the current directory.")
     exit()
 
+# Args.
 cell_size = float(input("Cell size: "))
 flip_y = input("Flip Y [y/N] ? ") == "y" if True else False
 
