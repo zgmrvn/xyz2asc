@@ -1,4 +1,3 @@
-import argparse
 import os
 
 # Reads an xyz.
