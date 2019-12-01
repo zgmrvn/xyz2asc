@@ -64,7 +64,7 @@ if len(xyz_files) != 1:
 
 # Args.
 cell_size = float(input("Cell size: "))
-flip_y = input("Flip Y [y/N] ? ") == "y" if True else False
+flip_y = input("Flip Y [y/N] ? ") == "y"
 
 # Read xyz.
 coordinates = read_xyz(xyz_files[0])
